@@ -1462,18 +1462,6 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   
   <div data-integration="accessibility:toolbar"></div>
 
-<script>
-(function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const ticketNumber = urlParams.get('ticket');
-  if (ticketNumber) {
-    const ticketDisplay = document.getElementById('ticket-number-display');
-    if (ticketDisplay) {
-      ticketDisplay.textContent = '#' + ticketNumber;
-    }
-  }
-})();
-</script>
     <script src="/script.js"></script>
 
     <script id="zappy-font-awesome-loader">
